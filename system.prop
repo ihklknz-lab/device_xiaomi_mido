@@ -84,6 +84,10 @@ persist.vendor.mwqem.enable=1
 # Perf
 ro.vendor.qti.sys.fw.bservice_enable=true
 
+# Power Saving
+power.saving.mode=1
+pm.sleep_mode=1
+
 # Qualcomm
 ro.vendor.qti.va_aosp.support=1
 
@@ -136,6 +140,8 @@ ro.telephony.call_ring.multiple=false
 service.qti.ims.enabled=1
 telephony.lteOnCdmaDevice=1
 vendor.service.qti.ims.enabled=1
+ro.vold.umsdirtyratio=20
+ro.ril.disable.power.collapse=0
 #
 # Set network mode to (T/L/G/W/1X/EVDO, T/L/G/W/1X/EVDO) for 7+7 mode device on DSDS mode
 #
