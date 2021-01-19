@@ -53,6 +53,10 @@ TARGET_KERNEL_COMPILE_CLANG := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/mido
 TARGET_KERNEL_VERSION := 4.9
 
+# Additional Kernel Flags
+TARGET_KERNEL_ADDITIONAL_FLAGS +=
+HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" LLVM=1 LLVM_IAS=1
+
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
