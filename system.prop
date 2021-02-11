@@ -62,6 +62,9 @@ persist.qfp=false
 ro.fm.transmitter=false
 vendor.hw.fm.init=0
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Media
 av.debug.disable.pers.cache=1
 media.aac_51_output_enabled=true
