@@ -237,6 +237,12 @@ on property:persist.sys.radio.mobile_data_swap=1
     restart vendor.qcrild
     exec /bin/sleep 2
     restart vendor.qcrild2
+    
+# Enable qcrild and data services on boot so process starts in main
+    enable vendor.qcrild
+    enable vendor.qcrild2
+    enable vendor.dataqti
+    enable vendor.dataadpl
 
 # FM
 on property:hw.fm.init=0
