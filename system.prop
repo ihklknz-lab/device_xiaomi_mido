@@ -141,6 +141,7 @@ telephony.lteOnCdmaDevice=1
 vendor.service.qti.ims.enabled=1
 ro.vold.umsdirtyratio=20
 ro.ril.disable.power.collapse=0
+persist.sys.fflag.override.settings_provider_model=false
 #
 # Set network mode to (T/L/G/W/1X/EVDO, T/L/G/W/1X/EVDO) for 7+7 mode device on DSDS mode
 #
