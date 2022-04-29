@@ -59,6 +59,13 @@ on early-boot
     write /sys/kernel/boot_adsp/boot 1
 
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
+    
+    # Setup permission for Power HAL
+    chown system system /dev/stune/top-app/schedtune.boost
+    chown system system /dev/cpu_dma_latency
+
+    chmod 0664 /dev/stune/top-app/schedtune.boost
+    chmod 0664 /dev/cpu_dma_latency
 
     # Graphics
     chown system graphics /sys/class/graphics/fb0/idle_time
