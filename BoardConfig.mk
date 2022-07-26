@@ -56,6 +56,7 @@ TARGET_KERNEL_VERSION := 4.9
 # Additional Kernel Flags
 TARGET_KERNEL_ADDITIONAL_FLAGS +=
 HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" LLVM=1 LLVM_IAS=1
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
