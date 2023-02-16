@@ -370,6 +370,10 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml
+    
+# Remove Unwanted Packages
+PRODUCT_PACKAGES += \
+    Remove_Packages
 
 # Sensors
 PRODUCT_PACKAGES += \
